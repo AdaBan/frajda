@@ -139,13 +139,12 @@
       }
     </style>
     <style>
-      html {
+     html {
         height: -webkit-fill-available;
       }
 
       body {
         position: relative;
-        display: flex;
         min-height: 100vh;
         min-height: -webkit-fill-available;
         width: 100vw;
@@ -154,10 +153,6 @@
         font-family: 'Inter', sans-serif;
         font-weight: 500;
         line-height: 1.2;
-      }
-
-      body * {
-         
       }
 
       .inner {
@@ -171,14 +166,14 @@
       .title {
         margin-bottom: 16px;
         min-height: 0.5vw;
-        font-size: clamp(20px, 6.3vw, 72px);
+        font-size: min(max(20px, 6.3vw), 72px);
         font-weight: 700;
       }
 
       .subtitle {
         min-height: 0.5vw;
         color: #979588;
-        font-size: clamp(16px, 2.1vw, 24px);
+        font-size: min(max(16px, 2.1vw), 24px);
         letter-spacing: 0.04em;
         text-transform: uppercase;
       }
@@ -186,7 +181,7 @@
       .contact {
         min-height: 0.5vw;
         display: inline-block;
-        margin-top: clamp(40px, 16vh, 140px);
+        margin-top: min(max(40px, 16vh), 140px);
         border-bottom: 1px solid;
         color: inherit;
         font-size: 16px;
